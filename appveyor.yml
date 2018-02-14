@@ -1,0 +1,28 @@
+version: "{build}"
+
+environment:
+  matrix:
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python27-x64"
+    - PYTHON: "C:\\Python34"
+    - PYTHON: "C:\\Python34-x64"
+    - PYTHON: "C:\\Python35"
+    - PYTHON: "C:\\Python35-x64"
+    - PYTHON: "C:\\Python36"
+    - PYTHON: "C:\\Python36-x64"
+
+init:
+  - set PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%
+  - python --version
+  - pip install -U pip setuptools
+  - pip --version
+
+install:
+  - pip install pytest
+  - python setup.py install
+  - pip freeze --all
+
+build: off
+
+test_script:
+  - python setup.py test

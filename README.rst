@@ -3,11 +3,11 @@ See it at:
 - `pypi`_
 - `GitHub`_
 
-==============  ===============  =========  ============
-VERSION         DOWNLOADS        TESTS      COVERAGE
-==============  ===============  =========  ============
-|pip version|   |pip downloads|  |travis|   |coveralls|
-==============  ===============  =========  ============
+==============  ===================  ============
+VERSION         TESTS                COVERAGE
+==============  ===================  ============
+|pip version|   |travis| |appveyor|  |coveralls|
+==============  ===================  ============
 
 Library to easily read single chars and key strokes.
 
@@ -129,6 +129,10 @@ Licensed under `the MIT license`_.
 
 .. |travis| image:: https://travis-ci.org/magmax/python-readchar.png
   :target: `Travis`_
+  :alt: Travis results
+
+.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/magmax/python-readchar?svg=true
+  :target: https://ci.appveyor.com/project/magmax/python-readchar
   :alt: Travis results
 
 .. |coveralls| image:: https://coveralls.io/repos/magmax/python-readchar/badge.png
