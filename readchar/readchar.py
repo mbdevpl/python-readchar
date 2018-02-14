@@ -12,7 +12,8 @@ elif sys.platform == 'darwin':
 elif sys.platform in ('win32', 'cygwin'):
     from .readchar_windows import readchar
 else:
-    raise NotImplementedError('The platform %s is not supported yet' % sys.platform)
+    raise NotImplementedError(
+        'The platform %s is not supported yet' % sys.platform)
 
 
 def readkey(getchar_fn=None):
