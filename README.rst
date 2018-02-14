@@ -120,7 +120,8 @@ Please, **Execute the tests before any pull-request**. This will avoid invalid b
 License
 =======
 
-Copyright (c) 2014, 2015 Miguel Angel Garcia (`@magmax9`_).
+Copyright (c) 2014-2018 Miguel Angel Garcia (`@magmax9`_).
+Copyright (c) 2018 Mateusz Bysiek  https://mbdevpl.github.io
 
 Based on previous work on gist `getch()-like unbuffered character reading from stdin on both Windows and Unix (Python recipe)`_, started by `Danny Yoo`_.
 
