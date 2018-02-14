@@ -101,20 +101,21 @@ In order to develop or running the tests, you can do:
 
    source venv/bin/activate
 
-4. Install dependencies
+4. Run tests
 
 .. code:: bash
 
-    pip install -r requirements.txt -r requirements-dev.txt
+    python setup.py test
 
-5. Run tests
+5. Run static analysis
 
 .. code:: bash
 
-    make
+    pip install flake8
+    flake8 --statistics --count readchar
 
 
-Please, **Execute the tests before any pull-request**. This will avoid invalid builds.
+Please, **execute the tests and static analysis before any pull request**. This will avoid invalid builds.
 
 
 License
